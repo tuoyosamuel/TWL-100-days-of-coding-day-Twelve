@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    font-family: Sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:  border-box;
+   }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    padding: 20px 20px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    z-index: 1;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#DesktopNav{
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+#DesktopNav .active{
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+#DesktopNav :not(.active):hover{
+    color: orange;
+    transition: 0.2s;
+    border-bottom: 3px solid orange;
+}
+select{
+    background-color: #333;
+    font-size: 20px;
+    border-radius: 3px;
+     display: block;
+    width: 100%;
+    color: white;
+}
+#home{
+    background-image: url("img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkblue;
+    background-blend-mode: soft-light;
+    height: 100vh;
+    color: white;
+ }
+ 
+#home .content{
+    transform: translateY(50%); 
+    padding: 10px;
+    text-align: center;  
+    line-height: 1.7;
+}
+ 
+
+#home .content h2{
+    font-size: 30px;
+}
+ 
+/* styles for about section */
+#about{
+    height: 100vh;
+    color: white;
+    background-color: #333;
+}
+
+#about .content{
+    padding: 10px;
+    line-height: 1.7;
+}
+
+
+.about-container{
+
+ width:300px;
+    height:400px;
+}
+
+
+/* styles for contact*/
+#contact{
+    text-align: center;
+    background: white; 
+    height: 100vh;
+}
+
+#contact .form h2{
+    font-size: 40px;
+}
+#contact{
+    text-align: center;
+    background: white;
+    margin: auto;
+}
+
+#contact .form h2{
+    font-size: 40px;
+}
+input[type="text"],input[type="email"], textarea{
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 280px;
+  background-color: whitesmoke;
+}
+
+form{
+    text-align: center;
+    margin: auto;
+}
+
+textarea{
+  height: 200px;
+}
+
+.btn{
+  border: none;
+  padding: 15px;
+  margin-top: 5px;
+  width: 280px;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+}
+.skills{
+    text-align: left;
+ transform: translateX(10%);
+ 
+}
+#project{
+    padding: 30px;
+    
+}
+/*mobile Devices*/
+@media(max-width:768px){
+    #DesktopNav{
+        display: none;
+    }
+    .skills{
+        display: none;
+    }
+    #contact{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+ 
+
+ /* Desktop views and laptops*/
+@media(min-width: 800px){
+     header{
+         display: flex;
+    justify-content: space-between;
+     }
+     
+     #selectNav{
+         display: none;
+     }
+     #contact{
+         display: flex;
+         justify-content: space-around;
+     }
+     
+     #about{
+         display: flex;
+         justify-content: space-around;
+     }
+     
+#contact .skills{
+    text-align: left;
+    transform: translateX(-5000px);
+    transform: translateY(50%);
+    line-height: 1.7;  
+    
+    #contact{
+     display: flex;
+    justify-content: space-around;
+    }
+
+ }
